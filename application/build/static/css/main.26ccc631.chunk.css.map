@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,MACE,mBACF,CACA,aACE,UACF,CAEA,mBACE,WACF","file":"main.26ccc631.chunk.css","sourcesContent":[".demo {\n  display: inline-flex;\n}\n.video video {\n  width: 25vw;\n}\n\n.element_container {\n  height: 25vw;\n}\n\n\n\n"]}
