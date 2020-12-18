@@ -66,6 +66,11 @@ if ($iw / $ih > 1.33 && $iw / $ih < 1.6)
     $zoomX_end      = 1;
 }
 
+if ($iw / $ih > 1.4 && $iw / $ih < 1.5)
+{
+    $startYposition = $startYposition / 1.5;
+    $endYposition = $startYposition;
+}
 if ($ih / $iw == 1)
 {
 	// do nothing

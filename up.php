@@ -42,7 +42,6 @@ $delta_height = round($delta_height, 2);
 $zoom_y0 = ($oh / 2 - $oh / $zoom_start / 2);
 $zoom_x0 = ($ow / 2 - $ow / $zoom_start / 2);
 
-
 //Initial time = 0.01 second
 $startYposition = 0.5 * $ih - 0.01 / 7 * min(0.5 * $ih, $delta_height / 6) - $zoom_y0;
 $endYposition   = 0.5 * $ih - 7 / 7 * min(0.5 * $ih, $delta_height / 6);
@@ -78,6 +77,15 @@ if ($iw / $ih > 1.33 && $iw / $ih < 1.6)
     $zoomX_start    = 1;
     $zoomX_end      = 1;
 }
+
+if ($iw / $ih > 1.33 && $iw / $ih <= 1.5)
+{
+    $startYposition = $startYposition / 1.5 ;
+    $endYposition = $startYposition;
+    $zoomX_start    = 1;
+    $zoomX_end      = 1;
+}
+
 
 if ($ih / $iw > 2)
 {
