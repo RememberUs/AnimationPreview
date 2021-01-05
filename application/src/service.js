@@ -37,7 +37,7 @@ function down(iw, ih){
         endYposition = startYposition;
         // zoom_start = zoom_end = 1;
     }
-    if (iw / ih <= 1.5 && iw / ih >1.4) {
+    if (iw / ih <= 1.55 && iw / ih >1.4) {
         startYposition = startYposition / 1.5;
         endYposition = startYposition;
     }
@@ -130,7 +130,7 @@ function up(iw, ih){
         startYposition = startYposition / 2;
         endYposition = startYposition;
     }
-    if (iw / ih <= 1.5 && iw / ih >1.4) {
+    if (iw / ih <= 1.55 && iw / ih >1.4) {
         startYposition = startYposition / 1.5;
         endYposition = startYposition;
     }
